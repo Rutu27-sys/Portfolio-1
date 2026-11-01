@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: #1E3A8A;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.AppContainer {
+    width: 100%;
+    background-color: #1E3A8A;
+}
+.Home {
+    background-color: #1E3A8A;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 80px;
+    overflow: visible;
+}
+
+.About {
+    width: 100%;
+    height: 100vh;
+    background-color: #1E3A8A;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 45px;
+    box-sizing: border-box;
+    z-index: 1000;
+    font-family:'Syne-Regular', cursive;
+}
+
+.navright{
+    display: flex;
+    gap: 150px;
+    align-items: center;
+}
+
+.tag{
+    text-decoration: none;
+    color:#FAF3E0;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.tag.active {
+  background-color: #D9D9D9;
+  border-radius: 30px;
+  color: black;
+  width:110px;
+  height:40px;
+}
+
+.headline h1{
+    color:#FAF3E0;
+    font-size:96px;
+    font-family:'Slackey', cursive;
+    position: absolute;
+    top: 30%; 
+    left: 3%  
+}
+
+#scroll, #portfolio{
+    color:#FAF3E0;
+    font-size: 60px;
+    font-family:'Port Lligat Sans', sans-serif;
+    position: absolute; 
+}
+#scroll{
+    top: 50%;
+    left: 25%;
+}
+#scroll span{
+   display: inline-block;
+}
+#portfolio{
+    top: 57%;
+    left: 30%;
+}
+.box{
+    background-color:#FAF3E0;
+    position: absolute;
+    width: 450px;
+    height: 600px;
+    border-radius: 30px;
+    top: 15%;
+    left: 60%;
+}
+#sunflower{
+    width: 8%;
+    height: 15%;
+    position: absolute;
+    left: 57%;
+    top: 8%;
+    z-index: 3;
+}
+#Profile{
+    width: 450px;
+    height: 600px;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    z-index: 3;
+}
