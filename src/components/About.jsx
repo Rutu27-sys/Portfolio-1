@@ -60,17 +60,30 @@ const About = ({cardRef, sunflowerRef}) => {
        duration: 6, 
        delay: 0.5,
        ease :  'none',
+       opacity: 1,
        scrollTrigger: {
        trigger: "#About",     
        start: "top 70%",      
-       toggleActions: "play none none reverse"
+       toggleActions: "play none none reverse",
+    }
+})
+    })
+
+    useGSAP(()=>{
+      gsap.to('#borderbox , #IdCard', {
+       ease :  'none',
+       opacity: 1,
+       scrollTrigger: {
+       trigger: "#About",     
+       start: "top 70%",      
+       toggleActions: "play none none reverse",
     }
 })
     })
 
   return (
     <div id='About'>
-      <div className="box2"> Id Card </div>
+      <div className="box2" id='IdCard'> Id Card </div>
       <div id="borderbox"> border</div>
       <div id="descrip"> </div>
        <div  ref={cardRef} className="box"> 

@@ -4,6 +4,7 @@ import { SplitText } from 'gsap/SplitText'
 import { useGSAP } from '@gsap/react'
 import './Home.css'
 import About from './About.jsx'
+import Projects from './Projects.jsx'
 import Navbar from './Navbar'
 import SunflowerImg from '../assets/Sunflower.png'
 import ProfileImg from '../assets/Sunflower.png'
@@ -104,6 +105,7 @@ const Home = () => {
     </div>
     <div > <img id="Profile" src={ProfileImg} ref={ProfileRef} alt="ProfilePic" /> </div>
        <About cardRef={cardRef} sunflowerRef={sunflowerRef}/>
+       <Projects />
    
     
     
