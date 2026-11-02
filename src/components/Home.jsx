@@ -5,11 +5,13 @@ import { useGSAP } from '@gsap/react'
 import './Home.css'
 import About from './About.jsx'
 import Projects from './Projects.jsx'
+import ArtGallery from './ArtGallery.jsx'
 import Navbar from './Navbar'
 import SunflowerImg from '../assets/Sunflower.png'
 import ProfileImg from '../assets/Sunflower.png'
 import { ScrollTrigger } from 'gsap/all'
 import { link as Srolllink} from 'react-scroll'
+import Contacts from './Contacts.jsx'
 
 gsap.registerPlugin(SplitText,useGSAP,ScrollTrigger)
 const words = ["Scroll ","Explore ", "Dive ", "Peek ","Wander "]
@@ -106,9 +108,8 @@ const Home = () => {
     <div > <img id="Profile" src={ProfileImg} ref={ProfileRef} alt="ProfilePic" /> </div>
        <About cardRef={cardRef} sunflowerRef={sunflowerRef}/>
        <Projects />
-   
-    
-    
+       <ArtGallery />
+       <Contacts />
     </div>
   )
 
