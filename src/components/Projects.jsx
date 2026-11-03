@@ -2,6 +2,8 @@ import React,{useRef,useState}  from 'react'
 import gsap from 'gsap'
 import { useGSAP} from '@gsap/react'
 import './Projects.css'
+import EverSip from '../assets/EverSip.png'
+import Louboutin from '../assets/Loubotin.png'
 
 const projectsData = [
   { id: 1, title: "Mumbai Smart Tourism", desc: "Java & MongoDB backend tourism portal.", link: "#" },
@@ -44,23 +46,25 @@ const Projects = () => {
       <div className="projectsContainer">
        
       <div className="projectList">
-      <span className="projecttitle">[Title]</span>
+      <span className="projecttitle">EverSip Landing Page</span>
       <div className="projectsCard" id='projectsCard1'>
+        <img src={EverSip} alt="EverSip Landing Page" />
         <div className="projectdesc">
-          <p>[Description]</p>
+          <p>A fresh, eco-friendly e-commerce landing page crafted for a sustainable juice bottle brand. This design demonstrates my skills in visual layering and depth composition—using floating fruit assets, an organic sage-green palette, clean typography pairing, and clear CTA hierarchies to drive conversion.</p>
         </div>
       </div>
-      <a href="#link" className="projectlink">[link]</a>
+      <a href="https://in.pinterest.com/pin/994803005218570582/" className="projectlink">[Click here to view]</a>
     </div>
       
       <div className="projectList">
-      <span className="projecttitle">[Title]</span>
+      <span className="projecttitle">Mens Footwear Concept</span>
       <div className="projectsCard" id='projectsCard2'>
+        <img src={Louboutin} alt="Christian Louboutin  Mens Footwear Concept" />
         <div className="projectdesc">
-          <p>[Description]</p>
+          <p>A luxury, dark-mode landing page designed to capture high-fashion sophistication and brand identity. This project highlights my ability to structure editorial layouts with dramatic serif typography, strategic crimson accent mapping that mirrors the signature red-sole aesthetic, and high-contrast UI components optimized for seamless frontend implementation.</p>
         </div>
       </div>
-      <a href="#link" className="projectlink">[link]</a>
+      <a href="https://in.pinterest.com/pin/994803005218570403/" className="projectlink">[Click here to view]</a>
     </div>
 
     <div className="projectList">
@@ -70,7 +74,7 @@ const Projects = () => {
           <p>[Description]</p>
         </div>
       </div>
-      <a href="#link" className="projectlink">[link]</a>
+      <a href="#link" className="projectlink">[Click here to view]</a>
     </div>
     <div className="projectList">
       <span className="projecttitle">[Title]</span>
@@ -79,7 +83,7 @@ const Projects = () => {
           <p>[Description]</p>
         </div>
       </div>
-      <a href="#link" className="projectlink">[link]</a>
+      <a href="#link" className="projectlink">[Click here to view]</a>
     </div>
 
     <div className="projectList">
@@ -89,7 +93,7 @@ const Projects = () => {
           <p>[Description]</p>
         </div>
       </div>
-      <a href="#link" className="projectlink">[link]</a>
+      <a href="#link" className="projectlink">[Click here to view]</a>
     </div>
 
     <div className="projectList">
@@ -99,7 +103,7 @@ const Projects = () => {
           <p>[Description]</p>
         </div>
       </div>
-      <a href="#link" className="projectlink">[link]</a>
+      <a href="#link" className="projectlink">[Click here to view]</a>
       
     </div>
       

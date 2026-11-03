@@ -13,6 +13,12 @@
     top: 220%; 
     left: 15% ; 
 }
+.projecttitle {
+    color: #FAF3E0;
+    font-size: 20px;
+    font-family: 'CourierPrime-Regular', cursive;
+    line-height: 1.2;
+}
 .projectList {
     display: flex;
     flex-direction: column;
@@ -24,13 +30,20 @@
     height: 200px;
     background-color: #D1D5DB; 
     border-radius: 20px;
-    
+    position: relative; 
+    overflow: hidden;
 }
 .projectsCard:hover {
     transform: translateY(-8px);
     cursor: pointer;
     background-color: #A0A0A0; 
 }
+
+.projectsCard:hover .projectdesc {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .carousel-container {
     display: grid;
     grid-template-columns: repeat(3, 320px); 
@@ -49,6 +62,33 @@
     opacity: 0.4;
     transform: scale(0.9);
     pointer-events: none; 
+}
+.projectsCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+.projectsCard:hover img {
+    transform: scale(1.05);
+}
+.projectdesc {
+    position: absolute;
+    inset: 0;
+    background-color: #A0A0A0; 
+    color: #FAF3E0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    font-size: 12px;       
+    line-height: 1.4;
 }
 .project-card-center {
     width: 480px;
@@ -107,4 +147,19 @@
     position: absolute;
     top: 210%;
     left: 40%;
+}
+.projectlink{
+    color: #FAF3E0;
+    font-size: 14px;
+    font-family: 'CourierPrime-Regular', cursive;
+    line-height: 1.2;
+    text-decoration: none;
+}
+.projectlink:visited,
+.projectlink:active {
+    color: #FAF3E0;
+}
+.projectlink:hover {
+    color: #FAF3E0;
+    text-decoration: underline; 
 }
